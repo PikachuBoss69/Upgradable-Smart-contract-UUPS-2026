@@ -21,7 +21,7 @@ contract DeployAndUpgradeTest is Test{
     }
 
     function testUpgrade() public {
-        BOXV2 boxV2 = BOXV2();
+        BOXV2 boxV2 = new BOXV2();
 
         upgradeScript.upgradeBox (proxy, address(boxV2));
 
